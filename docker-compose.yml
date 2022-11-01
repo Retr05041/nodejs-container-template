@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  # What I am calling THIS Dockerfile - node:5000 
+  node:
+    build: . # build this dirs Dockerfile
+    ports:
+      # - {my port}:{docker port}
+      - 5000:5000 # port forward port 5000 on the container your own port 5000 so the outside world can see whats running on the containers port
